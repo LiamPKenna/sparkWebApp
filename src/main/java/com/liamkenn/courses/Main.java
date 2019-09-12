@@ -1,5 +1,7 @@
 package com.liamkenn.courses;
 
+import com.liamkenn.courses.model.CourseIdeaDAO;
+import com.liamkenn.courses.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -11,6 +13,9 @@ import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
+
         get("/", (req, res) -> {
             Map<String, String> model = new HashMap<>();
             String username = req.cookie("username");
