@@ -3,13 +3,26 @@ package com.liamkenn.courses;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
-import static spark.Spark.get;
+import java.util.HashMap;
+import java.util.Map;
+
+
+import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
         get("/", (req, res) -> {
-            return new ModelAndView(null, "index.hbs");
+            Map<String, String> model = new HashMap<>();
+            String username = req.cookie("username");
+            model.put("username", username);
+            return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
-        get("/hello", (req, res) -> "Hello Cruel World");
+
+        post("/sign-in", (req, res) -> {
+            String username = req.queryParams("username");
+            res.cookie("username", username);
+            res.redirect("/");
+            return "Signed in";
+        } );
     }
 }
