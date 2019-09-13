@@ -1,5 +1,6 @@
 package com.liamkenn.courses;
 
+import com.liamkenn.courses.model.CourseIdea;
 import com.liamkenn.courses.model.CourseIdeaDAO;
 import com.liamkenn.courses.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
@@ -35,5 +36,14 @@ public class Main {
             model.put("ideas", dao.findAll());
             return new ModelAndView(model, "ideas.hbs");
         }, new HandlebarsTemplateEngine());
+
+        post("/ideas", (req, res) -> {
+            String title = req.queryParams("title");
+            String username = req.cookie("username");
+            CourseIdea courseIdea = new CourseIdea(title, username);
+            dao.add(courseIdea);
+            res.redirect("/ideas");
+            return "Signed in";
+        } );
     }
 }
