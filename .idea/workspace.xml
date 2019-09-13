@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c99ca6cf-f8f2-4eba-8d9f-79da4ed8cfe5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/idea.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/not-found.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -9,12 +12,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/CourseIdea.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/CourseIdea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/CourseIdeaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/CourseIdeaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/SimpleCourseIdeaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/liamkenn/courses/model/SimpleCourseIdeaDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/base.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/base.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/ideas.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/ideas.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/CourseIdea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/CourseIdea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/CourseIdeaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/CourseIdeaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/SimpleCourseIdeaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liamkenn/courses/model/SimpleCourseIdeaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/base.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/base.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" afterDir="false" />
@@ -63,6 +75,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.liamkenn.courses.model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
