@@ -29,5 +29,11 @@ public class Main {
             res.redirect("/");
             return "Signed in";
         } );
+
+        get("/ideas", (req,res) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("ideas", dao.findAll());
+            return new ModelAndView(model, "ideas.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
